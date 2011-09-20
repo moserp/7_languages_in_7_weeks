@@ -1,0 +1,33 @@
+f = File.open("name_of_file")
+# do stuff with file
+f.close
+
+File.open("name_of_file") do |f|
+  # do stuff with file
+end
+
+using a block the file is automatically closed
+
+
+Hash to Array:
+foo = {:a => :b, :c => :d}
+foo.to_a
+ => [[:a, :b], [:c, :d]]
+
+ ie use #to_a, which converts the hash to an array of arrays, where the child
+ arrays are the key/value pairs from the hash
+
+Array to Hash:
+
+bar = [1, 2, 3, 4]
+Hash[*bar]
+ => { 1 => 2, 3 => 4}
+
+ ie each pair of value in the array become a kay/value pair in the hash. You
+ must have an even number of elements in the array
+
+
+You can iterate through a Hash as it include Enumerable
+
+
+Arrays as: stacks, lists, 
