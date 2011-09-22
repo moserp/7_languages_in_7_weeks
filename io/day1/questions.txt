@@ -1,0 +1,42 @@
+1 + 1
+==> 2
+1 + "one"
+
+  Exception: argument 0 to method '+' must be a Number, not a 'Sequence'
+  ---------
+  message '+' in 'Command Line' on line 1
+
+therefore strongly typed
+
+Io> 0 and true
+==> true
+
+therefore: 0 is true
+
+Io> "" and true
+==> true
+
+therefore: an empty string is true
+
+Io> nil and true
+==> false
+
+therefore: nil is false
+
+
+To get what slots a prototype supports:
+
+Object slotNames
+==> list(slotSummary, try, and, apropos, foreachSlot, performWithArgList, coroWith, <, actorRun, removeAllSlots, for, isTrue, clone, become, !=, write, switch, setSlotWithType, method, ancestors, futureSend, resend, isActivatable, lazySlot, list, serializedSlotsWithNames, coroDoLater, evalArg, uniqueId, @@, do, ownsSlots, deprecatedWarning, setProto, println, hasProto, writeln, setSlot, handleActorException, newSlot, ifNonNil, message, isKindOf, removeAllProtos, coroFor, pause, continue, ifNil, stopStatus, prependProto, ancestorWithSlot, print, inlineMethod, evalArgAndReturnSelf, doString, type, ?, return, break, >, justSerialized, ==, currentCoro, slotNames, serializedSlots, hasLocalSlot, serialized, while, perform, ifNonNilEval, wait, asString, returnIfNonNil, getLocalSlot, or, getSlot, yield, asSimpleString, loop, hasDirtySlot, thisContext, removeProto, appendProto, in, isNil, uniqueHexId, shallowCopy, lexicalDo, not, .., doRelativeFile, compare, launchFile, , returnIfError, raiseIfError, ifNilEval, init, isError, evalArgAndReturnNil, doFile, argIsActivationRecord, ifError, isIdenticalTo, super, isLaunchScript, slotDescriptionMap, cloneWithoutInit, hasSlot, contextWithSlot, thisLocalContext, >=, if, relativeDoFile, memorySize, <=, asyncSend, thisMessage, @, markClean, coroDo, slotValues, -, doMessage, proto, setIsActivatable, updateSlot, removeSlot, protos, block, actorProcessQueue, setProtos, argIsCall)
+
+From OperatorTable
+
+....
+
+Assign Operators
+  ::= newSlot
+  :=  setSlot
+  =   updateSlot
+
+but how do we know this from day1?
+What's the difference between a new slot and setting a slot?
