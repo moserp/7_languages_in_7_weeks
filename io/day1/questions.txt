@@ -40,3 +40,9 @@ Assign Operators
 
 but how do we know this from day1?
 What's the difference between a new slot and setting a slot?
+
+
+To run an Io program from a file:
+io <filename>
+eg:
+$ io hello_world.io
